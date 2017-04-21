@@ -1,0 +1,59 @@
+<div class="jumbotron text-center">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-tabs">
+                    <li><a data-toggle="tab" href="#menu">Regular Menu</a></li>
+                    <li class="active"><a data-toggle="tab" href="#special">Specials</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+            <h1> {{specmenu}} </h1>
+
+            <div ng-controller="specialController as list">
+                <div ng-repeat="i in specials"
+                     ng-if="cart.length==0"
+                     ng-init="open()">
+
+                </div>
+
+
+
+
+<!-- -->
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div ng-repeat="special in specials">
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <h3>{{special.special_name}}</h3>
+                                        <img style="height:200px;" src="./images/special-menu/daily.png"
+                                             alt="special" class="img-responsive">
+                                        <h3 class="priceoverlay">€{{special.price}} </h3>
+                                        <div class="caption">
+                                            <div ng-repeat="item in special.items">
+                                            <h3 align="left">{{item.name}}</h3>
+                                            </div>
+                                            <h5 style="color: red">SAVE € {{special.saving}}</h5>
+                                            <p><a  class="btn btn-success" role="button"  ng-click = "addSpecialToCart(special)">Add to Cart</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- -->
+            </div>
+    </div>
+</div>
+</div>

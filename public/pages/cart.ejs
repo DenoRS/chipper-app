@@ -1,0 +1,108 @@
+<div class="jumbotron text-center">
+    <div class="container">
+        <hr>
+        <h1> {{cartmes}} </h1>
+        <hr>
+        <div class="row">
+            <div ng-controller="cartController">
+
+                <div class="col-md-5">
+                    <div class="row">
+                        <h2>Order</h2>
+                        <table class="table table-bordered">
+                            <!-- header -->
+                            <tr class="well">
+                                <td><b>Item</b></td>
+                                <td><b>Quantity</b></td>
+                                <td><b>Price</b></td>
+                                <td />
+                            </tr>
+
+                            <tr class="well" ng-repeat='item in cart'>
+                                <td>{{item.name}}</td>
+                                <td>
+                                    <div class="input-append">
+                                            <button class="btn btn-primary" ng-click='addQty(item)'>+</button>
+                                            <span style="width:100px" >{{qty(item)}}</span>
+                                            <button class="btn btn-danger" ng-click='removeQty(item)'>-</button>
+                                    </div>
+                                </td>
+                                <td>€ {{(item.price*qty(item))}}</td>
+                                <td>
+                                    <button class="btn btn-danger" ng-click='remove(item)'>remove</button>
+                                </td>
+                            </tr>
+
+                            <!-- footer -->
+                            <tr class="well">
+                                <td><b>Total</b></td>
+                                <td><b>{{cartTotal}}</b></td>
+                                <td><b>€ {{totalPrice}}</b></td>
+                                <td />
+                            </tr>
+                        </table>
+                        <!-- buttons -->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a href="#/menu" class="btn btn-block" style="text-decoration:none;background:grey;color:white">
+                                    <i class="fa fa-long-arrow-left"></i> back to menu
+                                </a>
+                            </div>
+                            <div class="col-md-8">
+                                <button
+                                        class="btn btn-block btn-danger"
+                                        ng-click="">
+                                    Payment <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- ------------------------------------------- --->
+            <div ng-controller="specialController as list">
+                <div class="col-md-6 col-md-offset-1" >
+                    <!-- Suggestion box -->
+                    <div class="row">
+                        <h2>Suggestions</h2>
+                        <table class="table table-bordered">
+                            <!-- header -->
+                            <tr class="well">
+                                <td><b>Name</b></td>
+                                <td><b>Items</b></td>
+                                <td><b>Price</b></td>
+                                <td><b>Savings</b></td>
+                                <td />
+                            </tr>
+
+                            <tr class="well" ng-repeat='special in specials'>
+                                <td>{{special.special_name}}</td>
+                                <td ng-repeat="item in special.items">
+                                   {{item.name}}
+
+                                    <!--<div class="input-append">-->
+                                        <!--<div ng-repeat='qty in cartQty'>-->
+                                            <!--<button class="btn btn-primary" ng-click=''>+</button>-->
+                                            <!--<span style="width:100px" >{{qty}}</span>-->
+                                            <!--<button class="btn btn-danger" ng-click=''>-</button>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                </td>
+                                <td>€ {{(special.price)}}</td>
+                                <td>€ {{(special.saving)}}</td>
+                                <td>
+                                    <button class="btn btn-success" ng-click='addSpecialToCart(special)'>add </button>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                </div>
+                <!-- Suggestion box -->
+            </div>
+
+        </div>
+    </div>
+</div>

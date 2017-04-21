@@ -1,0 +1,285 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width:100%;
+  height:100%;
+  background-color: #ffffff;
+  color: #000000;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+}
+
+a {
+  color: #000000;
+}
+
+.h1#menutitle {
+  text-align:left;
+}
+
+/* Set the fixed height of the footer here */
+#push {
+  height: 400px;
+}
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  padding: 0 0 100px;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -100px;
+}
+
+/*Banner*/
+.banner {  background: url('../images/cartoonback.jpg') center 0;
+  background-size: cover;
+  height:400px;
+  }
+
+.jumbotron { margin-top:10px;}
+/*.banner{ position:relative; margin-top:30px;  background-size: cover; }*/
+/*.banner .caption{position: absolute;top: 0;left:0; right: 0; bottom: 0;background: rgba(255, 253, 241, 0); }*/
+/*.banner .caption-wrapper{display: table;height: 100%;width: 100%;}*/
+/*.banner .caption-info{display: table-cell;vertical-align: middle;text-align: center;color: #fff;}*/
+/*.banner .caption-info h1{font:normal 4.5em Lobster,Arial,Helvetica;text-transform:capitalize;}*/
+/*.banner .caption-info p{font:600 1.7em Josefin Sans,Arial,Helvetica;}*/
+/*.banner a.explore{color: #fff;}*/
+
+
+/*.navbar ul.nav li a:link, .navbar ul.nav li a:visited{*/
+/*font-size:120%;*/
+/*color:red;*/
+/*text-shadow: 1px 1px black;*/
+/*text-align:center;*/
+/*}*/
+/*.navbar ul.nav li a:active{*/
+/*font-size:120%;*/
+/*text-shadow: 1px 1px black;*/
+/*text-align:center;*/
+/*color:orange;*/
+/*}*/
+/*.navbar ul.nav li a:hover{*/
+/*font-size:120%;*/
+/*text-shadow: 1px 1px black;*/
+/*text-align:center;*/
+/*color:orange;*/
+
+/*}*/
+
+
+/*.navbar ul.nav li.dropdown ul{*/
+/*margin-top:.2em;*/
+/*background-color:#2a2a2a;*/
+/*}*/
+
+
+/*.navbar ul.nav li.dropdown ul.dropdown-menu li{*/
+/*margin-top:.5em;*/
+/*background-color:#2a2a2a;*/
+/*}*/
+
+/*.navbar ul.nav li.dropdown ul.dropdown-menu a:link, .navbar ul.nav li.dropdown ul.dropdown-menu a:visited{*/
+/*background-color: #2a2a2a;*/
+/*color:red;*/
+/*font-size:120%;*/
+/*text-shadow: 1px 1px black;*/
+/*text-align:center;*/
+/*}*/
+/*.navbar ul.nav li.dropdown ul.dropdown-menu a:hover{*/
+/*color:red;*/
+/*background-color:#2a2a2a;*/
+/*}*/
+
+/*!* The background colour is set to #2a2a2a and the font colour is set to red when the drop down*/
+/*menu is open *!*/
+/*.navbar .nav li.dropdown.open .dropdown-toggle {*/
+/*color:red;*/
+/*text-shadow: 1px 1px black;*/
+/*text-align:center;*/
+/*font-size:120%;*/
+/*background-color:#2a2a2a;*/
+/*}*/
+
+/*!* The font colour of the list items within the nested list are changed to red when they are hovered over *!*/
+/*ul.nav li.dropdown ul.dropdown-menu a:hover{*/
+/*color:red;*/
+/*font-size:120%;*/
+/*text-shadow: 1px 1px black;*/
+/*text-align:center;*/
+/*background-color:#2a2a2a;*/
+/*}*/
+
+/*!* The caret is set to red *!*/
+/*.navbar .nav li.dropdown .dropdown-toggle .caret{*/
+/*border-top-color:red;*/
+/*border-bottom-color:red;*/
+/*}*/
+
+/*!* The colour of the caret is changed to orange when it is hovered over or the current focus *!*/
+/*.navbar .nav li.dropdown  a:hover .caret,.navbar .nav li.dropdown a:focus .caret{*/
+/*border-top-color:orange;*/
+/*border-bottom-color:orange;*/
+/*}*/
+
+/*!* The colour of the caret is changed to white when the nested list is open *!*/
+/*.navbar .nav li.dropdown.open .dropdown-toggle .caret{*/
+/*border-top-color:black;*/
+/*border-bottom-color:black;*/
+/*}*/
+
+
+/*a .navbar-brand {*/
+/*background: url(../images/woodback.png);*/
+/*}*/
+/*.navbar-header {*/
+/*background: url(../images/woodback.png);*/
+/*}*/
+
+nav {
+  background: url(../images/woodback.png);
+  font-size: 1em;
+  color: #aaa;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+  line-height: 80px;
+  height: 80px;
+  padding-top: 0;
+}
+
+.footer{background-color: #000000; color: #fff;  padding: 2em; height: 100px; font-size: 1em;color: #aaa;}
+.footer a{color: #aaa;margin: 0 1em; }
+
+
+
+.thumbnail{
+  position:relative;
+}
+
+ h3.priceoverlay{
+  position:relative;
+
+  left:0;
+
+  margin:0;
+  color: #0fa9c7;
+
+  font-size: 30px;
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+  text-align:right;
+  background: linear-gradient(transparent, #ababab);
+  width:100%;
+
+}
+
+
+img {
+  height:80%;
+  width:300px;
+}
+
+ul {
+  margin-top:25px;
+}
+
+li {
+  color:black;
+}
+
+
+/*.wrapper2 {*/
+    /*width: 90%;*/
+    /*position: relative;*/
+    /*border: 1px solid #000;*/
+    /*background: #efefef;*/
+    /*overflow: hidden;*/
+    /*border-radius: 7px;*/
+/*}*/
+
+/*.container2 {*/
+    /*overflow-y: auto;*/
+    /*height: 200px;*/
+    /*border-top: 41px solid transparent;*/
+    /*border-bottom: 41px solid transparent;*/
+/*}*/
+
+/*table {*/
+    /*border-spacing: 0;*/
+    /*border-collapse: collapse;*/
+    /*width: 100%;*/
+/*}*/
+
+/*td + td {*/
+    /*border-left: 1px solid #fff;*/
+/*}*/
+
+/*td, th {*/
+    /*border-bottom: 1px solid #fff;*/
+    /*background: #efefef;*/
+    /*padding: 10px;*/
+/*}*/
+
+/*thead tr th,*/
+/*tfoot tr td {*/
+    /*height: 0;*/
+    /*line-height: 0;*/
+    /*margin: 0;*/
+    /*padding-top: 0;*/
+    /*padding-bottom: 0;*/
+    /*color: transparent;*/
+    /*border: none;*/
+    /*white-space: nowrap;*/
+/*}*/
+
+/*thead tr th div,*/
+/*tfoot tr td div {*/
+    /*position: absolute;*/
+    /*color: #fff;*/
+    /*height: 20px;*/
+    /*padding: 10px;*/
+    /*margin-left: -10px;*/
+    /*line-height: normal;*/
+    /*width: 100%;*/
+    /*z-index: 2;*/
+    /*text-align: left;*/
+    /*font-weight: bold;*/
+/*}*/
+
+/*thead tr th div {*/
+    /*border-left: 1px solid #000;*/
+    /*border-bottom: 1px solid #000;*/
+/*}*/
+
+/*tfoot tr td div {*/
+    /*border-top: 1px solid #000;*/
+/*}*/
+
+/*tfoot tr td div.c1,*/
+/*thead tr th div.c1 {*/
+    /*background: violet;*/
+/*}*/
+
+/*tfoot tr td div.c2,*/
+/*thead tr th div.c2 {*/
+    /*background: green;*/
+/*}*/
+
+/*tfoot tr td div.c3,*/
+/*thead tr th div.c3 {*/
+    /*background: yellow;*/
+/*}*/
+
+/*thead tr th div {*/
+    /*top: 0;*/
+/*}*/
+
+/*tfoot tr td div {*/
+    /*bottom: 0;*/
+/*}*/
+
+/*thead tr th:first-child div,*/
+/*tfoot tr td:first-child div {*/
+    /*border-left: none;*/
+/*}*/
